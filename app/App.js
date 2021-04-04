@@ -6,6 +6,7 @@ import Welcome from './src/screens/welcome';
 import Login from './src/screens/login';
 import Register from './src/screens/reg';
 import Home from './src/screens/home';
+import Pay from './src/screens/pay';
 
 
 const Stack = createStackNavigator();
@@ -34,6 +35,11 @@ function MyStack() {
       <Stack.Screen 
         name="Home" 
         component={Home} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Pay" 
+        component={Pay} 
         options={{ headerShown: false}} 
       />
     

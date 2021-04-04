@@ -52,7 +52,7 @@ export default function Home() {
               </View>
             </View>
             <TouchableOpacity><View style={{backgroundColor:"#1C0B19", width:'90%', alignSelf:'center', marginTop:'2.5%', borderRadius:5}}>
-                <Text style={{fontFamily:'A', textAlign:'center', color:'#FFF', paddingVertical:'5%'}}>Pay with ecoin</Text></View></TouchableOpacity>
+                <Text style={{fontFamily:'A', textAlign:'center', color:'#FFF', paddingVertical:'5%'}} onPress={()=>navigation.navigate('Pay')}>Pay with ecoin</Text></View></TouchableOpacity>
                 <View>
                 <Text style={{fontFamily:'A', fontSize:17, marginTop:'5%', marginLeft:'5%'}}>Transaction History</Text>
                 <View style={{height:'70%'}}><ScrollView>{txList}</ScrollView></View>
